@@ -28,7 +28,8 @@ struct StatusMenu: View {
                         .lineLimit(1)
                         .truncationMode(.tail)
                     Spacer()
-                    Text(timeString(from: elapsedTime))
+                    Text(timeString(from: elapsedTime)) // TODO: its wrong rn
+                    // Text(timeString(from: Date().timeIntervalSince(currSession!.getStart())))
                 }
             }
             

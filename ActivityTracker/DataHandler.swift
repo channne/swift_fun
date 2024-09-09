@@ -58,7 +58,7 @@ class DataHandler: ObservableObject {
         }
         
         session.end = Date()
-        session.duration = duration
+        session.duration = abs(session.end!.timeIntervalSince(session.start))
         
         activitySessions[index] = session
         activities[activityName] = activitySessions

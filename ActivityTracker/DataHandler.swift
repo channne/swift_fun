@@ -50,7 +50,7 @@ class DataHandler: ObservableObject {
         return session
     }
     
-    func stopActivity(session: ActivitySession, duration: TimeInterval) {
+    func stopActivity(session: ActivitySession) {
         let activityName = session.getName()
         guard var activitySessions = activities[activityName],
               let index = activitySessions.firstIndex(where: { $0.id == session.id }) else {
@@ -66,10 +66,33 @@ class DataHandler: ObservableObject {
         saveData()
     }
     
+    // delete activity
+    
+    func deleteActivity(activityName: String) {
+        activities.removeValue(forKey: activityName)
+        saveData()
+    }
+    
+    func deleteSession(activityName: String, start: Date) {
+        if var sessions = activities[activityName] {
+            sessions.removeAll { $0.start == start }
+            if sessions.isEmpty {
+                activities.removeValue(forKey: activityName)
+            } else {
+                activities[activityName] = sessions
+            }
+            saveData()
+        }
+    }
+    
     // today activities
     
-    func getTodayActivities() -> [String: TimeInterval] {
+    func getTodayActivities() -> [String: [Date: TimeInterval]] {
         return ActivitySummary.getDaySummary(activities: activities)
+    }
+    
+    class func sumDurations(session_list: [Date: TimeInterval]) -> TimeInterval {
+        return session_list.values.reduce(TimeInterval(0), { x, y in x + y })
     }
     
     // summary by activity

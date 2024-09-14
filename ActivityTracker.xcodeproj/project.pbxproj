@@ -12,6 +12,7 @@
 		AF52164B2C8E22B6004E5C0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF52164A2C8E22B6004E5C0E /* Assets.xcassets */; };
 		AF52164E2C8E22B6004E5C0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF52164D2C8E22B6004E5C0E /* Preview Assets.xcassets */; };
 		AF5216582C8E2F07004E5C0E /* StatusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5216572C8E2F07004E5C0E /* StatusMenu.swift */; };
+		AF8ABDE72C959AB7002FDA85 /* ActivitySingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ABDE62C959AB7002FDA85 /* ActivitySingleView.swift */; };
 		AFA227AD2C8EC1D800C88D26 /* ActivityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA227AC2C8EC1D800C88D26 /* ActivityState.swift */; };
 		AFA227B12C8EC81800C88D26 /* InitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA227B02C8EC81800C88D26 /* InitError.swift */; };
 		AFA227B32C8ECEE400C88D26 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA227B22C8ECEE400C88D26 /* DataHandler.swift */; };
@@ -27,6 +28,7 @@
 		AF52164D2C8E22B6004E5C0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF52164F2C8E22B6004E5C0E /* ActivityTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityTracker.entitlements; sourceTree = "<group>"; };
 		AF5216572C8E2F07004E5C0E /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
+		AF8ABDE62C959AB7002FDA85 /* ActivitySingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySingleView.swift; sourceTree = "<group>"; };
 		AFA227AC2C8EC1D800C88D26 /* ActivityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityState.swift; sourceTree = "<group>"; };
 		AFA227B02C8EC81800C88D26 /* InitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitError.swift; sourceTree = "<group>"; };
 		AFA227B22C8ECEE400C88D26 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				AFA227AC2C8EC1D800C88D26 /* ActivityState.swift */,
 				AF5216572C8E2F07004E5C0E /* StatusMenu.swift */,
 				AFA227B62C8EDE6800C88D26 /* ActivitySummary.swift */,
+				AF8ABDE62C959AB7002FDA85 /* ActivitySingleView.swift */,
 				AF5216482C8E22B2004E5C0E /* ContentView.swift */,
 				AFA227B22C8ECEE400C88D26 /* DataHandler.swift */,
 				AF52164A2C8E22B6004E5C0E /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 				AFA227AD2C8EC1D800C88D26 /* ActivityState.swift in Sources */,
 				AFA227B32C8ECEE400C88D26 /* DataHandler.swift in Sources */,
 				AF5216582C8E2F07004E5C0E /* StatusMenu.swift in Sources */,
+				AF8ABDE72C959AB7002FDA85 /* ActivitySingleView.swift in Sources */,
 				AF5216472C8E22B2004E5C0E /* ActivityTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
